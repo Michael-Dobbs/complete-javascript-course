@@ -1,0 +1,12 @@
+---Display---
+console.log(); = Write to console
+alert(); = Display a notification
+
+---Variables---
+1.)Syntax
+let name = 'test'; = String declaration & assignment.
+
+2.)Rules 
+Names can't start with a number, cannot be reserved javascript keywords, and must only contain letters, numbers, underscores (_), or dollar signs ($). 
+
+3.)Best practices are to have full CAPS for constants. (i.e. PI = 3.14)
