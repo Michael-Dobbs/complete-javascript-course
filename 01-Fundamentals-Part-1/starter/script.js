@@ -76,7 +76,18 @@ switch (day) {
         console.log(`Sleep in.`);
         console.log(`Wake up and enjoy the weekend`);
         break;
+    default:
+        console.log(`Something went wrong...try again.`);
+        break;
 }
+
+//Conditional - Single line decision execution.
+const size = 23;
+size == 23 ? console.log(`The Clothes fit.`) : console.log(`They do not fit.`);
+
+const fit = size == 23 ? '`The Clothes fit.`' : '`They do not fit.`';
+
+console.log(`I tested whether the clothes fit for you. $(size == 23 ? 'The Clothes fit.' : 'They do not fit.').`);
 
 //type conversion
 const inputYear = '1991';

@@ -77,6 +77,8 @@ Arithmatic 2nd highest
 Comparison lower
 Assignment lowest
 
+6.)See also Ternary/Conditional operators in decision making section.
+
 -------------
 ---Strings---
 -------------
@@ -99,13 +101,14 @@ New lines in template literals are automatically created when hitting return key
 ---Decisions---
 ---------------
 
+1.) if, else if, else.
 if (condition) {execute code}
 else {execute code}
 else if (condition) {execute code}
 
 Can execute single operations without {} - ex: if (age = 21) console.log(`You are old`);
 
-Switch statements - good for when multiple options have the same code executed (like days of week - schedule)
+2.) Switch statements - good for when multiple options have the same code executed, or if options are explicitly listed (like days of week in a schedule).
 
 switch (condition) {
     case 'condition1':
@@ -115,7 +118,25 @@ switch (condition) {
     case 'condition3':
         run code
         break;
+    default:
+        run code
+        break
 }
+
+3.) Ternary (3 part) Conditional execution - Single statement/quick decision execution.
+
+const size = 22;
+size == 23 ? console.log(`The Clothes fit.`) : console.log(`They do not fit.`);
+
+    I.) Can also assign variable values.
+
+const fit = size == 23 ? '`The Clothes fit.`' : '`They do not fit.`' ;
+
+    II.) Can be used inside of template literals.
+
+console.log(`I tested whether the clothes fit for you. $(size == 23 ? 'The Clothes fit.' : 'They do not fit.').`);
+
+
 
 
 ----------------------------------
