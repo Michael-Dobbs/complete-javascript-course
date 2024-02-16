@@ -18,3 +18,14 @@ console.log(typeof 'Jonas');
 
 const PI = 3.1415;
 var test = 'test';
+
+const now = 2024;
+const ageMike = 2024 - 1997;
+const ageHarper = 2024 - 2001;
+console.log(ageMike, ageHarper);
+console.log(ageMike * 2, ageHarper / 10, 2 ** 3);
+
+let x = 2;
+let y = 4;
+y += 1;
+console.log(x <= y);

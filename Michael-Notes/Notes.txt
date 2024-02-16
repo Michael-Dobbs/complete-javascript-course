@@ -1,9 +1,14 @@
+-------------
 ---Display---
+-------------
 console.log(); = Write to console
-alert(); = Display a notification
+alert(); = Display a browser notification
 comments are similar to html - //comment or /*comment*/
 
+---------------
 ---Variables---
+---------------
+
 1.)Syntax (let, const, var))
 
 let = mutable or changing variable
@@ -33,3 +38,40 @@ Names can't start with a number, cannot be reserved javascript keywords, and mus
     V. Null - Empty or void of value
     VI. Symbol - Unique and unchanged
     VII. BigInt - Number that is to large to store in I.
+
+---------------
+---Operators---
+---------------
+
+1.) Arithmatic Operators
+Addition +
+Subtraction -
+Multiplication *
+Division /
+Exponential Mult. **
+Modulus (remainder division) 
+
+2.)typeof Operator (returns variable/value types)
+
+3.)Assignment Operators (give and change values to variables)
+Basic assignment = 
+Augment +=, -=, *=, /=
+Increment ++ (example - x++;)
+Decrement -- (example - x--;)
+
+4.)Comparison Operators (compare values)
+Greater Than >
+Less than <
+Equal to ==
+Strict euality === (checks variable types too)
+Greater Than or equal >=
+Less than or equal <=
+
+5.)Operator Precedence
+typeof is Highest
+Arithmatic 2nd highest
+Comparison lower
+Assignment lowest
+
+
+
