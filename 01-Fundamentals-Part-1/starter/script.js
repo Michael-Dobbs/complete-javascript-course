@@ -41,7 +41,7 @@ const agenow = year - 1997
 const messageLiteral = `I'm ${fName}, a ${agenow} year old ${job}.`;
 console.log(messageLiteral);
 
-//decisions
+//decision making.
 const age = 19;
 if (age >= 16) {
     //CMD + CTRL + SPACE for emojis on MAC
@@ -58,6 +58,24 @@ if (age >= 21) {
 else {
     const yearsleft = 21 - age;
     console.log(`You are not old enough to drink 🍺. Please wait ${yearsleft} years.`);
+}
+
+//Switch Statements
+const day = 'monday';
+switch (day) {
+    case 'monday': // day === monday
+    case 'tuesday':
+    case 'wednesday':
+    case 'thursday':
+    case 'friday':
+        console.log(`Work 8 hours.`);
+        console.log(`Go home`);
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log(`Sleep in.`);
+        console.log(`Wake up and enjoy the weekend`);
+        break;
 }
 
 //type conversion
@@ -119,3 +137,4 @@ if (hasDL && hasGoodVision && !isTired) {
 } else {
     console.log(`Someone else should drive...`);
 }
+

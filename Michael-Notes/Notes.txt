@@ -105,6 +105,18 @@ else if (condition) {execute code}
 
 Can execute single operations without {} - ex: if (age = 21) console.log(`You are old`);
 
+Switch statements - good for when multiple options have the same code executed (like days of week - schedule)
+
+switch (condition) {
+    case 'condition1':
+    case 'condition2':
+        run code
+        break;
+    case 'condition3':
+        run code
+        break;
+}
+
 
 ----------------------------------
 ---Type Conversion and Coercion---
