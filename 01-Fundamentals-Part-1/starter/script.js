@@ -83,3 +83,14 @@ if (money) {
 } else {
     console.log(`You should get a job.`);
 }
+
+//Input
+const favorite = Number(prompt(`What's your favorite number?`));
+console.log(Number(favorite));
+
+if (favorite === 23) // '23' is = 23
+{
+    console.log(`Cool! 23 is an amazing number`)
+} else if (favorite === 7) {
+    console.log(`7 is cool too.`)
+} else { console.log(`Not a great number choice...`) }
