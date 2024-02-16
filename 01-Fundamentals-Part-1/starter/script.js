@@ -59,3 +59,27 @@ else {
     const yearsleft = 21 - age;
     console.log(`You are not old enough to drink 🍺. Please wait ${yearsleft} years.`);
 }
+
+//type conversion
+const inputYear = '1991';
+console.log(Number(inputYear) + 1);
+console.log(Number('Jonas')); //Nan
+console.log('String(23), 23');
+
+//type coercion
+console.log(`I am ` + 23 + ` years old`); //Converts 23 to string.
+console.log('24' - '10' - 3); //Converts strings to numbers.
+console.log('24' * 4); //Converts to numbers.
+console.log('24' / 2); // converts to numbers.
+
+//Truthy & Falsy
+console.log(Boolean(0)); //falsy
+console.log(Boolean('test')); //truthy
+console.log(Boolean({})); //empty object - returns true
+
+const money = 0;
+if (money) {
+    console.log(`Don't spend it all.`);
+} else {
+    console.log(`You should get a job.`);
+}

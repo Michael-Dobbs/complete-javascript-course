@@ -77,7 +77,7 @@ Assignment lowest
 ---Strings---
 -------------
 
-1.) Concatenation done with + and type conversion is automatic.
+1.) Concatenation done with + and type Coercion is automatic.
 
 Since spacing and overhead of concatenation for long sentences is annoying. String template literals exist.
 
@@ -96,4 +96,30 @@ New lines in template literals are automatically created when hitting return key
 ---------------
 if (condition) {execute code}
 else {execute code}
+
+
+----------------------------------
+---Type Conversion and Coercion---
+----------------------------------
+
+JavaScript automatically does type coercion as it processes. Addition symbols tend to create Strings, while subtraction, multiplication, and division symbols create numbers.
+
+** Note: Can cause errors in code you aren't sure how it will result.
+
+Most coercion occurs during logical operations or in console logging.
+
+Manual type conversion is done through multiple methods.
+
+1.)Number() - must be number convertable or NaN is returned
+2.)String() - will to strings, but runs into issues with truthy/falsy values (see below).
+3.)Bool() - 
+
+Falsy: Values that arent exactly false, but will become so if trying to convert to boolean.
+    I.) 0
+    II.) ''
+    III.) undefined
+    IV.) null
+    V.) Nan
+
+Truthy: Every other value that will be converted to true.
 
