@@ -1,12 +1,35 @@
 ---Display---
 console.log(); = Write to console
 alert(); = Display a notification
+comments are similar to html - //comment or /*comment*/
 
 ---Variables---
-1.)Syntax
+1.)Syntax (let, const, var))
+
+let = mutable or changing variable
 let name = 'test'; = String declaration & assignment.
+note: javascript supports dynamic typing.
+Can reassign value without let keyword. (name = 'test2')
+
+const = not mutable/changeable.
+const PI = 3.1415; declaration and assignment in one.
+const PI; just declaration.
+
+var = legacy variables (should be avoided now).
+var name = 'test'; String declaration & assignment.
+
+console.log(typeof name); = logs var. type in console. (there is a legacy bug where null returns 'object').
 
 2.)Rules 
 Names can't start with a number, cannot be reserved javascript keywords, and must only contain letters, numbers, underscores (_), or dollar signs ($). 
 
 3.)Best practices are to have full CAPS for constants. (i.e. PI = 3.14)
+
+4.)Primitive Data Types:
+    I. Number - 1 or 1.0
+    I. String - "Text"
+    I. Boolean - true or false
+    IV. Undefined - named, but not assigned value
+    V. Null - Empty or void of value
+    VI. Symbol - Unique and unchanged
+    VII. BigInt - Number that is to large to store in I.
