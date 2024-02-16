@@ -136,3 +136,12 @@ Truthy: Every other value that will be converted to true.
 -----------
 
 prompt() - Prompt function asks the user for input.
+
+
+-------------
+---Boolean---
+-------------
+
+&& AND - Both must be true or false
+|| OR - Only 1 must be true or false
+! NOT - Inverts a true/false.

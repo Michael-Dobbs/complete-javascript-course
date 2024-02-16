@@ -94,3 +94,28 @@ if (favorite === 23) // '23' is = 23
 } else if (favorite === 7) {
     console.log(`7 is cool too.`)
 } else { console.log(`Not a great number choice...`) }
+
+//Boolean Logic
+const hasDL = true;
+const hasGoodVision = true;
+
+console.log(hasDL && hasGoodVision);//Returns True
+console.log(hasDL || hasGoodVision);//Returns True
+console.log(!hasDL);//Returns Falso
+
+const shouldDrive = hasDL && hasGoodVision;
+
+if (hasDL && hasGoodVision) {
+    console.log(`She is able to drive.`);
+} else {
+    console.log(`Someone else should drive...`);
+}
+
+const isTired = true; // C
+console.log(hasDL && hasGoodVision && isTired)
+
+if (hasDL && hasGoodVision && !isTired) {
+    console.log(`She is able to drive.`);
+} else {
+    console.log(`Someone else should drive...`);
+}
