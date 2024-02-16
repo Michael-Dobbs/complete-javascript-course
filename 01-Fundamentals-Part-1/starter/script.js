@@ -87,7 +87,7 @@ size == 23 ? console.log(`The Clothes fit.`) : console.log(`They do not fit.`);
 
 const fit = size == 23 ? '`The Clothes fit.`' : '`They do not fit.`';
 
-console.log(`I tested whether the clothes fit for you. $(size == 23 ? 'The Clothes fit.' : 'They do not fit.').`);
+console.log(`I tested whether the clothes fit for you. ${size == 23 ? 'The Clothes fit.' : 'They do not fit.'}`);
 
 //type conversion
 const inputYear = '1991';
