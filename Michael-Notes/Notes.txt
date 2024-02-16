@@ -94,4 +94,6 @@ New lines in template literals are automatically created when hitting return key
 ---------------
 ---Decisions---
 ---------------
+if (condition) {execute code}
+else {execute code}
 

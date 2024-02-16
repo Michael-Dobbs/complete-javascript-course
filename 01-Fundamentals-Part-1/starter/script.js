@@ -37,8 +37,25 @@ let message = "I'm " + fName + ", a " + (year - 1997) + " year old " + job;
 console.log(message);
 
 //template literals using ``
-const age = year - 1997
-const messageLiteral = `I'm ${fName}, a ${age} year old ${job}.`;
+const agenow = year - 1997
+const messageLiteral = `I'm ${fName}, a ${agenow} year old ${job}.`;
 console.log(messageLiteral);
 
 //decisions
+const age = 19;
+if (age >= 16) {
+    //CMD + CTRL + SPACE for emojis on MAC
+    //Windows 10: Windows +
+    console.log(`You are old enough to drive. 🚙`);
+}
+else {
+    const yearsleft = 16 - age;
+    console.log(`You are not old enough to drive 🚙. Please wait ${yearsleft} years.`);
+}
+if (age >= 21) {
+    console.log(`You are old enough to drink. 🍺`);
+}
+else {
+    const yearsleft = 21 - age;
+    console.log(`You are not old enough to drink 🍺. Please wait ${yearsleft} years.`);
+}
