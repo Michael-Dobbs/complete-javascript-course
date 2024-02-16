@@ -73,5 +73,25 @@ Arithmatic 2nd highest
 Comparison lower
 Assignment lowest
 
+-------------
+---Strings---
+-------------
 
+1.) Concatenation done with + and type conversion is automatic.
+
+Since spacing and overhead of concatenation for long sentences is annoying. String template literals exist.
+
+2.) Strings entered in `` become template literals.
+These literals can have combinations of characters/strings and variables inside ${}.
+
+example: let test = `I'm ${age} years old.`
+
+3.) New lines in regular strings:
+console.log('String with \n\ newline')
+
+New lines in template literals are automatically created when hitting return key.
+
+---------------
+---Decisions---
+---------------
 
