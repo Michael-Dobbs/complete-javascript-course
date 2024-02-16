@@ -97,6 +97,8 @@ New lines in template literals are automatically created when hitting return key
 if (condition) {execute code}
 else {execute code}
 
+Can execute single operations without {} - ex: if (age = 21) console.log(`You are old`);
+
 
 ----------------------------------
 ---Type Conversion and Coercion---
