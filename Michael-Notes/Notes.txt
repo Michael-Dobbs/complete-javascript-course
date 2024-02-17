@@ -1,3 +1,13 @@
+-----------------
+---Strict Mode---
+-----------------
+
+To code in strict mode, you must start the script file with the following in line 1:
+
+'use strict';
+
+Strict mode allows for improved error catching and reporting. It also reserves certain keywords in case they may be used un the future (private, interface, void, etc.).
+
 -------------
 ---Display---
 -------------
@@ -178,3 +188,8 @@ prompt() - Prompt function asks the user for input.
 && AND - Both must be true or false
 || OR - Only 1 must be true or false
 ! NOT - Inverts a true/false.
+
+---------------
+---Functions---
+---------------
+
