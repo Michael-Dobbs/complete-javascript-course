@@ -194,7 +194,11 @@ prompt() - Prompt function asks the user for input.
 ---------------
 
 1.) Syntax
-    I.) Defining:
+    I.) Defining/Declaring:
 function name(parameters) {code}
     II.) Calling, Invoking, Running:
+name(arguements);
+
+2.) Anonymus
+const name = function (parameters) {code}
 name(arguements);
