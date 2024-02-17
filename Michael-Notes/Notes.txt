@@ -199,6 +199,14 @@ function name(parameters) {code}
     II.) Calling, Invoking, Running:
 name(arguements);
 
-2.) Anonymus
+2.) Anonymus Function Expression
 const name = function (parameters) {code}
 name(arguements);
+
+3.) Arrow Function Expression
+Function return happens automatically. While arrow functions are simple, they cannot use the 'this' keyword.
+
+const name = parameters => code;
+name(arguments);
+
+4.) Functions calling eachother.
