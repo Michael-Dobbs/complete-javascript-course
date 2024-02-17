@@ -193,3 +193,8 @@ prompt() - Prompt function asks the user for input.
 ---Functions---
 ---------------
 
+1.) Syntax
+    I.) Defining:
+function name(parameters) {code}
+    II.) Calling, Invoking, Running:
+name(arguements);
