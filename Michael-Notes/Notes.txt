@@ -246,6 +246,7 @@ name.shift();
 name.indexOf(value);
     IX.) Includes - Returns boolean result based on strict equality.
 name.includes(value);
+
 -------------
 ---Objects---
 -------------
