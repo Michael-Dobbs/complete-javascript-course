@@ -212,8 +212,14 @@ name(arguements);
 const name = parameters => code;
 name(arguments);
 
-** Note: Put multiple parameters inside paranthesis. 
+** Note: Put multiple parameters inside paranthesis.
 
-----------------
----Loops---
-----------------
+------------
+---Arrays---
+------------
+
+
+
+-------------
+---Objects---
+-------------

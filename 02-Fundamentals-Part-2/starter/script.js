@@ -66,3 +66,4 @@ const yearsUntilRetire = (birthYear, firstName) => {
 console.log(yearsUntilRetire(1991, 'Bob'));
 console.log(yearsUntilRetire(1995, 'Jill'));
 
+//Arrays
