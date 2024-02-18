@@ -67,3 +67,30 @@ console.log(yearsUntilRetire(1991, 'Bob'));
 console.log(yearsUntilRetire(1995, 'Jill'));
 
 //Arrays
+const friends = ['Tim', 'Matt', 'Tom'];
+console.log(friends);
+
+const yearList = new Array[1991, 1992, 1993];
+console.log(yearList);
+console.log(yearList[0]);
+console.log(yearList.length);
+console.log(yearList[yearList.length - 1]);
+
+//Can store arrays within arrays
+const testList = [friends, 21, 'Test', 42 - 1, `Test 2`];
+
+//Running functions on arrays
+const ageList = calcAge1(yearList[0]); //one item.
+
+//Appending arrays.
+friends.push('Jay');
+//Adding elements to start/index 0
+friends.unshift('Bob');
+//Remove last element.
+friends.pop();
+//Remove First element.
+friends.shift();
+//Search for index location
+friends.indexOf('Tom');
+//Includes - Returns true/false
+friends.includes('Tom');

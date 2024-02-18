@@ -218,8 +218,34 @@ name(arguments);
 ---Arrays---
 ------------
 
+1.) Syntax
+const name = [item1, item2, item3, ... ,itemN];
 
+2.) Another method - New Array object
+const name = new Array [item1, item2, item3, ... ,itemN];
 
+3.) Array methods.
+    I.) starts at index [0].
+console.log(name[0])
+    II.) Get array length 
+name.length
+    III.) Modify at index.
+name[2] = 'Test';
+
+** Note: Modify works with const in this example because array index's are accesible with the object methods (and arrays are not a primitive value). You cannot change the whole array this way though.
+
+    IV.) Push (Append) Method. - Adds elements to the end.
+name.push(element);
+    V.) Unshift Method - Adds elements to the start/index 0.
+name.unshift(element);
+    VI.) Pop Method - Removes the last element.
+name.pop();
+    VII.) Shift Method - Removes the first element.
+name.shift();
+    VIII.) Search - Index of.
+name.indexOf(value);
+    IX.) Includes - Returns boolean result based on strict equality.
+name.includes(value);
 -------------
 ---Objects---
 -------------
