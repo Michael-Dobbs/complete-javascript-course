@@ -18,8 +18,8 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 /* Write your code below. Good luck! 🙂 */
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const scoreDolphins = calcAverage(85, 54, 41);
-const scoreKoalas = calcAverage(23, 34, 27);
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
 
 function checkWinner(avgDolphins, avgKoalas) {
     if (avgDolphins >= (2 * avgKoalas)) {
@@ -30,4 +30,9 @@ function checkWinner(avgDolphins, avgKoalas) {
         console.log(`No team wins...`);
     }
 }
+checkWinner(scoreDolphins, scoreKoalas);
+
+//Test 2
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins, scoreKoalas);
