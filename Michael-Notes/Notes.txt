@@ -193,20 +193,27 @@ prompt() - Prompt function asks the user for input.
 ---Functions---
 ---------------
 
-1.) Syntax
+1.) Regular Declaration Syntax
     I.) Defining/Declaring:
 function name(parameters) {code}
     II.) Calling, Invoking, Running:
 name(arguements);
 
 2.) Anonymus Function Expression
+    I.) A function value stored in a variable.
 const name = function (parameters) {code}
 name(arguements);
 
-3.) Arrow Function Expression
-Function return happens automatically. While arrow functions are simple, they cannot use the 'this' keyword.
+3.) Arrow Function
+    I.) Great for oneline quick functions.
+    II.) Function return happens automatically. 
+    III.) While arrow functions are simple, they cannot use the 'this' keyword.
 
 const name = parameters => code;
 name(arguments);
 
-4.) Functions calling eachother.
+** Note: Put multiple parameters inside paranthesis. 
+
+----------------
+---Loops---
+----------------
