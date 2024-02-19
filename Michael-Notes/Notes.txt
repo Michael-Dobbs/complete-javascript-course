@@ -310,5 +310,3 @@ for
 4.) While loop.
 
 while (condition) {execute code}
-
-
