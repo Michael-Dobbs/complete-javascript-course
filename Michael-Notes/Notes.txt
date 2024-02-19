@@ -147,8 +147,6 @@ const fit = size == 23 ? '`The Clothes fit.`' : '`They do not fit.`' ;
 console.log(`I tested whether the clothes fit for you. $(size == 23 ? 'The Clothes fit.' : 'They do not fit.').`);
 
 
-
-
 ----------------------------------
 ---Type Conversion and Coercion---
 ----------------------------------
@@ -218,6 +216,8 @@ name(arguments);
 ---Arrays---
 ------------
 
+Use these for ordered/sequenced data.
+
 1.) Syntax
 const name = [item1, item2, item3, ... ,itemN];
 
@@ -250,3 +250,40 @@ name.includes(value);
 -------------
 ---Objects---
 -------------
+
+Use these for unstructured/ordered data.
+
+1.) Simple Literal Object
+const name = {
+    key: value,
+    key: value,
+    key: value,
+    ...
+    key: value
+
+    name: function(parameters){
+        code;
+    }
+}
+
+2.) Accessing object data. (2 methods)
+    I.)console.log(name.key) - Dot notification
+
+    Note: Must be the exact key/property name or queries will return undefined values.
+
+    II.) console.log(name['key']) - Bracket Notation.
+
+    Note: This method allows for entering expressions in the 'key' space to create a matching object key/property.
+
+3.) Adding properties to objects.
+    I.) Dot - name.key = value;
+    II.) Bracket - name['key'] = value;
+
+4.) Calling object methods.
+    I.) Dot - name.key(parameters);
+    II.) Bracket - name['key'](parameters);
+
+5.) The 'this' Keyword.
+    I.) 'this' refers to referencing properties of the object itself. It is a special variable that grants access to keys in the object properties and methods.
+    2.) It is useful because it allows us to write code that only states properties and methods one time, and then reference them afterwards (in case changes get made to the object).
+    3.) 'this' is a variable that is equal to 'who' is calling the method. So if the object is called name, then the method name.function() gets called, where inside usage of this.key can access name's properties and name.key() accesses its methods.
