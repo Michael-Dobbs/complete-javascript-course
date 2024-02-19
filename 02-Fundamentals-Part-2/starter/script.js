@@ -170,3 +170,63 @@ console.log(jonas.calcAndStore());
 //Challenge! Write the following:
 //"Jonas is a 46-year old teacher, and he has a drivers license.""
 console.log(jonas.getSummary());
+
+//Loops
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}.`)
+}
+
+//Loop through arrays.
+const test = ['One', 'Two', 'Three']
+for (let i = 0; i < test.length; i++) {
+    console.log(test[i]);
+}
+
+const types = [];
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i], typeof jonas[i]);
+
+    types[i] = typeof jonas[i] //Copy and filling an array.
+    types.push(typeof jonas[i]);//another way to fill the new array
+}
+
+const years = [1990, 1991, 1992, 1993];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+//Continue and break
+const types2 = []; //Loop only for non-strings
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+const types3 = []; //Loop stops if number is found
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+//Looping Backwards
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+//Loops in loops
+for (let exercise = 1; exercise >= 3; exercise++) {
+    console.log(`---Starting Exercise ${exercise}---`)
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Lifting weights repetition ${rep}.`)
+    }
+}
+
+//While Loop
+while (rep <= 10) {
+
+}
+
+

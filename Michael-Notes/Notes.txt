@@ -287,3 +287,28 @@ const name = {
     I.) 'this' refers to referencing properties of the object itself. It is a special variable that grants access to keys in the object properties and methods.
     2.) It is useful because it allows us to write code that only states properties and methods one time, and then reference them afterwards (in case changes get made to the object).
     3.) 'this' is a variable that is equal to 'who' is calling the method. So if the object is called name, then the method name.function() gets called, where inside usage of this.key can access name's properties and name.key() accesses its methods.
+
+-----------
+---Loops---
+-----------
+
+1.) For Loops
+
+for (let i = 1; i <= 10, i++) {
+    execute code;
+}
+
+    I.) Common to loop through arrays.
+
+for
+
+3.) Continue and Break keywords.
+
+    I.) continue - Helps to decide if you want current iteration of the loop. (ex. when used with an if statement, if (condtion) continue; - makes the loop iteration execute only if the condition is met).
+    II.) break - Exit the whole loop entirely.
+
+4.) While loop.
+
+while (condition) {execute code}
+
+
