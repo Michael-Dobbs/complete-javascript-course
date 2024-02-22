@@ -24,20 +24,20 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 //Find min/max value in temperature array.
 //Subtract min from the max (amplitude) and return it.
 
-const calcTempAmplitude = function (temps) {
-  let max = temps[0];
-  let min = temps[0];
-  for (let i = 0; i < temps.length; i++) {
-    const currentTemp = temps[i];
-    if (typeof currentTemp !== "number") continue;
-    if (currentTemp > max) max = currentTemp;
-    if (currentTemp < min) min = currentTemp;
-  }
-  console.log(max, min);
-  return max - min;
-};
-const amplitude = calcTempAmplitude(temperatures);
-console.log(amplitude);
+// const calcTempAmplitude = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const currentTemp = temps[i];
+//     if (typeof currentTemp !== "number") continue;
+//     if (currentTemp > max) max = currentTemp;
+//     if (currentTemp < min) min = currentTemp;
+//   }
+//   console.log(max, min);
+//   return max - min;
+// };
+// const amplitude = calcTempAmplitude(temperatures);
+// console.log(amplitude);
 
 //Problem 2
 //The function should now recieve 2 new arrays of temperature.
@@ -47,20 +47,31 @@ console.log(amplitude);
 //2.) Breaking into sub-problems
 //How to merge two arrays.
 
-const calcTempAmplitudeNew = function (t1, t2) {
-  const temps = t1.concat(t2);
-  let max = temps[0];
-  let min = temps[0];
-  for (let i = 0; i < temps.length; i++) {
-    const currentTemp = temps[i];
-    if (typeof currentTemp !== "number") continue;
-    if (currentTemp > max) max = currentTemp;
-    if (currentTemp < min) min = currentTemp;
-  }
-  console.log(max, min);
-  return max - min;
-};
-const amplitude2 = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
-console.log(amplitude);
+// const calcTempAmplitudeNew = function (t1, t2) {
+//   const temps = t1.concat(t2);
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const currentTemp = temps[i];
+//     if (typeof currentTemp !== "number") continue;
+//     if (currentTemp > max) max = currentTemp;
+//     if (currentTemp < min) min = currentTemp;
+//   }
+//   console.log(max, min);
+//   return max - min;
+// };
+// const amplitude2 = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
+// console.log(amplitude);
 
 //Using a Debugger
+const measureKelvin = function () {
+  const measurement = {
+    type: "temp",
+    unit: "celcius",
+    value: prompt("Degrees celcius:"),
+  };
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+console.log(measureKelvin());
