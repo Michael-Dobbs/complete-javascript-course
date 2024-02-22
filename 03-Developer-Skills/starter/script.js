@@ -1,5 +1,5 @@
 // Remember, we're gonna use strict mode in all scripts now!
-"use strict";
+'use strict';
 
 // const x = 23;
 // if (x === 23) console.log(23);
@@ -11,7 +11,7 @@
 
 //We work for a company building a smart home thermometer. Our most recent task is this: Given an array of temps for one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error.
 
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 // 1.) Understanding the problem.
 
@@ -61,17 +61,44 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 //   return max - min;
 // };
 // const amplitude2 = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
-// console.log(amplitude);
+// console.log(amplitude2);
 
 //Using a Debugger
-const measureKelvin = function () {
-  const measurement = {
-    type: "temp",
-    unit: "celcius",
-    value: prompt("Degrees celcius:"),
-  };
+// const measureKelvin = function () {
+//   const measurement = {
+//     type: 'temp',
+//     unit: 'celcius',
 
-  const kelvin = measurement.value + 273;
-  return kelvin;
+//     // C.) Fix the bug
+//     value: Number(prompt('Degrees celcius:')),
+//   };
+//   // B.) Find the bug
+//   console.log(measurement);
+//   //console.log(measurement.value);
+//   //console.warn(measurement.value);
+//   //console.error(measurement.value);
+//   const kelvin = measurement.value + 273;
+//   return kelvin;
+// };
+// // A.) Identify the bug.
+// console.log(measureKelvin());
+
+//Using a Debugger
+const calcTempAmplitudeBug = function (t1, t2) {
+  const temps = t1.concat(t2);
+  let max = 0;
+  // B.) Prblem is here v
+  let min = 0;
+  for (let i = 0; i < temps.length; i++) {
+    const currentTemp = temps[i];
+    if (typeof currentTemp !== 'number') continue;
+    //debugger;
+    if (currentTemp > max) max = currentTemp;
+    if (currentTemp < min) min = currentTemp;
+  }
+  console.log(max, min);
+  return max - min;
 };
-console.log(measureKelvin());
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 0, 5]);
+// A.) Identify
+console.log(amplitudeBug);
