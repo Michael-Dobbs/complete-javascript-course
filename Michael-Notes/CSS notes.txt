@@ -1,0 +1,86 @@
+---------------
+---CSS Notes---
+---------------
+Three ways to style contect in HTML
+
+1.) Inline CSS 
+Used to apply a unique style to a single HTML element.
+
+Example:
+    <h1 style="color:blue;text-align:center;">This is a heading</h1>
+    <p style="color:red;">This is a paragraph.</p>
+
+
+2.) External CSS 
+Links whole website to one single stylesheet that has CSS.
+
+Example:
+    <link rel="stylesheet" href="mystyle.css">
+
+3.) Internal CSS
+Creates a unique <style> section within the <head> section of a single HTML page.
+Typically so that it is different than others in external.
+
+Example:
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        } 
+    </style>
+
+---------------------
+---CSS Identifiers---
+---------------------
+
+ID's and classes can be attached to html elements in order to apply unique or grouped styleing.
+
+1.) ID's
+id's must be unique and only used once.
+
+Example:
+    In HTML:
+
+    <form id="your-name">
+      <h2>Your name here</h2>
+      <p class="first">Please fill in this form :)</p>
+
+      <input type="text" placeholder="Your name" />
+      <button>OK!</button>
+    </form>
+
+    CSS:
+
+    #your-name {
+        background-color: rgb(255, 220, 105);
+        border: 5px solid #444;
+        width: 400px;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+2.) Classes:
+Classes can be resused to apply the same styling to multiple HTML elements.
+
+Example:
+    In HTML:
+        <body>
+            <h1>JavaScript is fun, but so is HTML & CSS!</h1>
+            <p class="first">Here is my first paragraph in red.</p>
+            <p class="second">Here is my second paragraph in black</p>
+            <p class="first">Here is my third paragraph in red</p>
+        </body>
+
+    CSS:
+        .first {
+            color: red;
+        }
+
+-------------------
+---CSS Box Model---
+-------------------
+
