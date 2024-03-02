@@ -1,7 +1,18 @@
 ---------------
 ---CSS Notes---
 ---------------
-Three ways to style contect in HTML
+
+CSS General syntax:
+selector {property:value; property:value; [...];}
+
+Example:
+p {color: red; text-align: center;}
+
+-------------
+---Methods---
+-------------
+
+Three ways to style content in HTML
 
 1.) Inline CSS 
 Used to apply a unique style to a single HTML element.
@@ -33,13 +44,20 @@ Example:
         } 
     </style>
 
----------------------
----CSS Identifiers---
----------------------
+-------------------
+---CSS Selectors---
+-------------------
 
-ID's and classes can be attached to html elements in order to apply unique or grouped styleing.
+There are 5 main types of selectors in CSS. Element, ID's, Classes, universal, and groups.
 
-1.) ID's
+1.) Element
+
+The element selector selects HTML elements based on the element name.
+
+Example:
+    p {text-align: center;color: red;}
+
+2.) ID's
 id's must be unique and only used once.
 
 Example:
@@ -63,7 +81,7 @@ Example:
         margin-top: 30px;
     }
 
-2.) Classes:
+3.) Classes:
 Classes can be resused to apply the same styling to multiple HTML elements.
 
 Example:
@@ -79,6 +97,36 @@ Example:
         .first {
             color: red;
         }
+
+4.) Universal
+The universal selector (*) selects all HTML elements on the page.
+
+Example:
+    * {
+        text-align: center;
+        color: blue;
+    }
+
+5.) Grouping 
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Example:
+    h1, h2, p {
+        text-align: center;
+        color: red;
+    }
+
+ ---------------------------------------------------------------------------------------
+|                                   Selector Table                                      |
+| --------------------------------------------------------------------------------------|
+| #id	                 #firstname	    Selects the element with id="firstname"         |
+| .class	             .intro	        Selects all elements with class="intro"         |
+| element.class	         p.intro	    Selects only <p> elements with class="intro"    |
+| *	                     *	            Selects all elements                            |
+| element	             p	            Selects all <p> elements                        |
+| element,element,..	 div, p	        Selects all <div> elements and all <p> elements |
+ ---------------------------------------------------------------------------------------
+
 
 -------------------
 ---CSS Box Model---
@@ -111,3 +159,12 @@ Explanation of the different parts:
     Padding - Clears an area around the content. The padding is transparent
     Border - A border that goes around the padding and content
     Margin - Clears an area outside the border. The margin is transparent
+
+Example of applying styling using the box model:
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
