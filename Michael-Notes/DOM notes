@@ -1,0 +1,19 @@
+## ---DOM---
+
+1.) DOM = Document Object Model
+
+It is a structured representation of HTML documents. Allows Javascript to access HTML elements and styles to manipulate them (essentially a connection between JS and HTML).
+
+DOM is not part of JS, but actually Web API's from browsers that can be accessed
+
+2.) DOM Structure
+
+Document is considered a JS object.
+
+Hierarchy
+Document -> HTML -> Main Elements (body, section, title) -> Child Elements (p, H2, <img>)
+
+## ---DOM Manipulation---
+
+1.) Selecting HTML Elements in Javascript
+document.querySelector('.classname').childattribute;
