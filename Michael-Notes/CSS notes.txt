@@ -156,6 +156,7 @@ The CSS box model defines how CSS references where content is on the page. It is
 
 Explanation of the different parts:
     Content - The content of the box, where text and images appear
+        Content has Width and Height.
     Padding - Clears an area around the content. The padding is transparent
     Border - A border that goes around the padding and content
     Margin - Clears an area outside the border. The margin is transparent
@@ -168,3 +169,7 @@ div {
   padding: 50px;
   margin: 20px;
 }
+
+--Global Reset--
+
+CSS will automatically configure some default padding and margins to some elements.
